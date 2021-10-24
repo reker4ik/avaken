@@ -1,0 +1,231 @@
+.header {
+  background: #252525;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.header-wrapper {
+  padding: 34px 16px;
+  max-width: 1252px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-menu {
+  max-width: 542px;
+  width: 100%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fixed-logo {
+  display: none;
+}
+
+.fixed-logo.on {
+  display: block;
+}
+
+.header.fixed {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: #fff;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo.logo-off {
+  display: none;
+}
+
+.item.item-fixed {
+  color: #252525;
+}
+
+.mobile-fixed {
+  display: none;
+}
+
+.mobile-fixed.active {
+  display: block;
+}
+
+.mobile.off {
+  display: none;
+}
+
+.mobile-logo, .burger-wrapper {
+  display: none;
+}
+
+.mobile-logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-logo svg:nth-child(1) {
+  margin-right: 15px;
+}
+
+.burger-wrapper {
+  position: relative;
+  width: 24px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.burger-wrapper span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #fff;
+  display: block;
+}
+
+.burger-wrapper span:nth-child(1) {
+  width: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.burger-wrapper span:nth-child(2) {
+  top: 8px;
+  width: 18px;
+  left: 6px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.burger-wrapper span:nth-child(3) {
+  top: 16px;
+  width: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.burger-wrapper.fixed span {
+  background: #252525;
+}
+
+.burger-wrapper.active span:nth-child(2) {
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.burger-wrapper.active span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 19px;
+  top: 8px;
+  left: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.burger-wrapper.active span:nth-child(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 19px;
+  top: 8px;
+  left: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.mobile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popup-content {
+  display: block;
+  margin-top: 106px;
+  top: -150vh;
+  left: 0;
+  position: fixed;
+  height: 80vh;
+  z-index: 15;
+  opacity: 1;
+  pointer-events: auto;
+  width: 100vw;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.popup-content.active {
+  top: 0;
+}
+
+.menu-mobile {
+  padding-top: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.menu-mobile li span {
+  color: #252525;
+}
+
+.menu-mobile li span:hover {
+  color: #7637DD;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.menu-mobile li:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+@media (max-width: 1024px) {
+  .burger-wrapper {
+    display: block;
+  }
+
+  .mobile-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header-logo, .header-menu {
+    display: none;
+  }
+}

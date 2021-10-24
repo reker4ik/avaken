@@ -1,0 +1,110 @@
+.information {
+  padding: 40px 0 100px;
+}
+
+.information-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-content {
+  width: calc(50% - 10px);
+  position: relative;
+}
+.slider-content .slider-arrows {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #252525;
+  padding: 4px;
+  width: 169px;
+  min-height: 70px;
+  background-color: #F8F8F8;
+  z-index: 1;
+}
+.slider-content .slider-arrows .slider-arrow {
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.slider-content .slider-arrows .slider-arrow.slick-arrow {
+  position: static;
+}
+.slider-content .slider-arrows:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #252525;
+  opacity: 0.2;
+  width: 1px;
+  height: calc(100% - 16px);
+}
+.slider-content .slide-wrapper .slide {
+  position: relative;
+  height: 0;
+  padding-bottom: 118%;
+}
+.slider-content .slide-wrapper .slide img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.information-description {
+  width: calc(50% - 10px);
+}
+.information-description > h1 {
+  margin-bottom: 45px;
+}
+
+.btn:hover {
+  background: #252525;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 99%;
+  left: 99%;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .slider-content .slide-wrapper .slide {
+    padding-bottom: 169%;
+  }
+
+  .slider-content .slider-arrows {
+    width: 110px;
+    min-height: 50px;
+  }
+}

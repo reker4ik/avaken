@@ -1,0 +1,127 @@
+.about-us {
+  padding-bottom: 72px;
+}
+
+.contact-us-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us-form {
+  background: #252525;
+  padding: 32px 42px;
+}
+
+.contact-us-image {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact-us-form h4 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.3em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.contact-us-form p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #C2C2C2;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 24px;
+}
+
+.form-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-title {
+  max-width: 500px;
+}
+
+.info-title > p {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #5F5F5F;
+}
+
+.single-contact {
+  width: calc(50% - 10px);
+}
+
+label {
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #FFFFFF;
+}
+
+form input, textarea {
+  background: #3D3D3D;
+  border-bottom: 1px solid #7637DD;
+  display: block;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #FFFFFF;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 12px;
+}
+
+#message {
+  min-height: 118px;
+}
+
+.submit {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #7637DD;
+}
+
+@media (max-width: 1024px) {
+  .contact-us-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact-us-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .form-contact {
+    display: block;
+  }
+
+  .single-contact {
+    width: 100%;
+  }
+
+  .contact-us-form h4 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 479px) {
+  .contact-us-form h4 {
+    font-size: 20px;
+  }
+}
